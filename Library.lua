@@ -50,7 +50,7 @@ function UILibrary.Main(PrjName,HideKey)
 
 	HideMain.Name = "Main"
 	HideMain.Parent = Main
-	HideMain.BackgroundColor3 = Color3.fromRGB(255, 1, 48)
+	HideMain.BackgroundColor3 = Color3.fromRGB(1, 124, 255)
 	HideMain.BorderSizePixel = 0
 	HideMain.ClipsDescendants = true
 	HideMain.Position = UDim2.new(0, 0, 0, 0)
@@ -255,7 +255,7 @@ function UILibrary.Main(PrjName,HideKey)
 			Circle.Name = "Circle"
 			Circle.Parent = Circles
 			Circle.AnchorPoint = Vector2.new(0, 0.5)
-			Circle.BackgroundColor3 = Color3.fromRGB(255, 1, 48)
+			Circle.BackgroundColor3 = Color3.fromRGB(1, 124, 255)
 			Circle.BorderSizePixel = 0
 			Circle.Position = UDim2.new(0, (i - 1) * 13, 0.5, 0)
 			Circle.Size = UDim2.new(0, 12, 0, 12)
@@ -446,7 +446,7 @@ function UILibrary.Main(PrjName,HideKey)
 			if page.Name ~= "UIPageLayout" and (page.Name == Frame.Name and index == 2) then
 				IsTabOpened.Value = true
 				TweenService:Create(FadeFrame,TweenInfo.new(1.3),{BackgroundTransparency = 1}):Play()
-				TweenService:Create(TabButton,TweenInfo.new(0.25),{BackgroundTransparency = 0.3,BackgroundColor3 = Color3.fromRGB(255, 1, 48)}):Play()	
+				TweenService:Create(TabButton,TweenInfo.new(0.25),{BackgroundTransparency = 0.3,BackgroundColor3 = Color3.fromRGB(1, 124, 255)}):Play()	
 			elseif page.Name ~= "UIPageLayout" and (page.Name == Frame.Name and index ~= 2) then
 				IsTabOpened.Value = false
 			end
@@ -502,7 +502,7 @@ function UILibrary.Main(PrjName,HideKey)
 		TabButton.MouseButton1Click:Connect(function()
 			IsTabOpened.Value = true
 			UIPageLayout:JumpTo(Frame)
-			TweenService:Create(TabButton,TweenInfo.new(0.25),{BackgroundTransparency = 0.3,BackgroundColor3 = Color3.fromRGB(255, 1, 48)}):Play()
+			TweenService:Create(TabButton,TweenInfo.new(0.25),{BackgroundTransparency = 0.3,BackgroundColor3 = Color3.fromRGB(1, 124, 255)}):Play()
 			TweenService:Create(FadeFrame,TweenInfo.new(0.5),{BackgroundTransparency = 1}):Play()
 			ReColorOtherBtns()
 		end)
@@ -1326,7 +1326,7 @@ function UILibrary.Main(PrjName,HideKey)
 				end)
 
 				Button.MouseButton1Down:Connect(function()
-					TweenService:Create(Button,TweenInfo.new(0.25),{BackgroundTransparency = 0.3,BackgroundColor3 = Color3.fromRGB(255, 1, 48)}):Play()
+					TweenService:Create(Button,TweenInfo.new(0.25),{BackgroundTransparency = 0.3,BackgroundColor3 = Color3.fromRGB(1, 124, 255)}):Play()
 				end)
 
 				Button.MouseEnter:Connect(function()
