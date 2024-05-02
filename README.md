@@ -1,14 +1,14 @@
-# Ocerium_Project Made by SALFIIN#2470
+# MADE BA RAYUMA HUB
 
-# Library core
-first we have to add a loadstring for library usage
+# LIBRARY AT THIS AT THE VERY START(IMPORTANT)
+we need to add loadstring so ui work
 
 ```lua
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/slf0Dev/Ocerium_Project/main/Library.lua"))()
 ```
 
 
-# Creating a window
+# Making a window
 
 ```lua
 Window = Library.Main("Your Text","LeftAlt") -- change "LeftAlt" to key that you want will hide gui
